@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap');
+
+:root{
+    
+    --yellow:#E9B872
+    --cian:#78A1BB
+    --blue:#09163f
+    --gradient:linear-gradient(90deg, var(var(--blue)), var(var(--cian)));
+}
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+}
+
+*::selection{
+    background:var(--cian);
+    color:#4c4f52;
+}
+
+html{
+    font-size: 105%;
+    overflow-x: hidden;
+}
+
+body{
+    background:#f9f9f9;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background:#E9B872;
+    font-size: 1.5rem;
+    color:rgb(17, 17, 17);
+    cursor: pointer;
+    box-shadow: 0 .7rem 1rem rgba(0,0,0,.1);
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color:#E9B872;
+}
+
+header .navbar a{
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    color:#09163f;
+    transition: linear, 0.7s;
+}
+
+header .navbar a:hover{
+    color:#78A1BB;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url("../public/Rectangle3415.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home img {
+    width:30vw;
+}
+
+.home .content h3 {
+    font-size: 2.5rem;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    font-size: 2.5rem;
+    color:var(--blue);
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: 1.3rem;
+    color:#262B2C;
+    padding:1rem 0;
+}
+
+.aplicativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aplicativo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color:#262B2C;
+}
+
+.aplicativo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color:#262B2C;
+}
+
+.aplicativo p {
+    font-size: 1.3rem;
+    text-align: left;
+    color:#262B2C;
+}
+
+.box-container { 
+    margin: 0 0 15rem 0;
+}
+
+.aplicativo img {
+    width: 50vw;
+    margin: 0 6rem 0 0; 
+}
+
+#comments-container {
+    background: url("../public/Rectangle3415.png");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:#262B2C;
+}
+
+#comments-container div {
+    background-color: #E9B872;
+    border-radius: 15%;
+    width: 15vw;
+    height: 45vh;
+    text-align: justify;
+    align-items: center;
+}
+
+#comments-container img {
+    width: 10vw;
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 2rem 0 3.5rem;
+}
+
+#comments-container p {
+    margin: 1rem;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 2.5vw;
+    cursor: pointer;
+}
